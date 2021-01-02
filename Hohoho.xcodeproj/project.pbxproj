@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52ADDDE625A0833A00E0043D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADDDE525A0833A00E0043D /* AppDelegate.swift */; };
+		52ADDDE825A0833A00E0043D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADDDE725A0833A00E0043D /* SceneDelegate.swift */; };
+		52ADDDEA25A0833A00E0043D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADDDE925A0833A00E0043D /* ViewController.swift */; };
+		52ADDDED25A0833A00E0043D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ADDDEB25A0833A00E0043D /* Main.storyboard */; };
+		52ADDDEF25A0833B00E0043D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52ADDDEE25A0833B00E0043D /* Assets.xcassets */; };
+		52ADDDF225A0833C00E0043D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ADDDF025A0833C00E0043D /* LaunchScreen.storyboard */; };
+		52ADDDFC25A0844F00E0043D /* ChristmasTreeClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52ADDDFB25A0844F00E0043D /* ChristmasTreeClassifier.mlmodel */; };
+		52ADDE0D25A0A1A100E0043D /* hohoho.wav in Resources */ = {isa = PBXBuildFile; fileRef = 52ADDE0C25A0A1A100E0043D /* hohoho.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52ADDDE225A0833A00E0043D /* Hohoho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hohoho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52ADDDE525A0833A00E0043D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52ADDDE725A0833A00E0043D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52ADDDE925A0833A00E0043D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52ADDDEC25A0833A00E0043D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52ADDDEE25A0833B00E0043D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52ADDDF125A0833C00E0043D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52ADDDF325A0833C00E0043D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52ADDDFB25A0844F00E0043D /* ChristmasTreeClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ChristmasTreeClassifier.mlmodel; path = "../../tree classification/test/ChristmasTreeClassifier.mlmodel"; sourceTree = "<group>"; };
+		52ADDE0C25A0A1A100E0043D /* hohoho.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hohoho.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52ADDDDF25A0833900E0043D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52ADDDD925A0833900E0043D = {
+			isa = PBXGroup;
+			children = (
+				52ADDDE425A0833A00E0043D /* Hohoho */,
+				52ADDDE325A0833A00E0043D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52ADDDE325A0833A00E0043D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52ADDDE225A0833A00E0043D /* Hohoho.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52ADDDE425A0833A00E0043D /* Hohoho */ = {
+			isa = PBXGroup;
+			children = (
+				52ADDDE525A0833A00E0043D /* AppDelegate.swift */,
+				52ADDDE725A0833A00E0043D /* SceneDelegate.swift */,
+				52ADDDE925A0833A00E0043D /* ViewController.swift */,
+				52ADDE0C25A0A1A100E0043D /* hohoho.wav */,
+				52ADDDEB25A0833A00E0043D /* Main.storyboard */,
+				52ADDDFB25A0844F00E0043D /* ChristmasTreeClassifier.mlmodel */,
+				52ADDDEE25A0833B00E0043D /* Assets.xcassets */,
+				52ADDDF025A0833C00E0043D /* LaunchScreen.storyboard */,
+				52ADDDF325A0833C00E0043D /* Info.plist */,
+			);
+			path = Hohoho;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52ADDDE125A0833900E0043D /* Hohoho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52ADDDF625A0833C00E0043D /* Build configuration list for PBXNativeTarget "Hohoho" */;
+			buildPhases = (
+				52ADDDDE25A0833900E0043D /* Sources */,
+				52ADDDDF25A0833900E0043D /* Frameworks */,
+				52ADDDE025A0833900E0043D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hohoho;
+			productName = Hohoho;
+			productReference = 52ADDDE225A0833A00E0043D /* Hohoho.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52ADDDDA25A0833900E0043D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					52ADDDE125A0833900E0043D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 52ADDDDD25A0833900E0043D /* Build configuration list for PBXProject "Hohoho" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52ADDDD925A0833900E0043D;
+			productRefGroup = 52ADDDE325A0833A00E0043D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52ADDDE125A0833900E0043D /* Hohoho */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52ADDDE025A0833900E0043D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ADDDF225A0833C00E0043D /* LaunchScreen.storyboard in Resources */,
+				52ADDDEF25A0833B00E0043D /* Assets.xcassets in Resources */,
+				52ADDE0D25A0A1A100E0043D /* hohoho.wav in Resources */,
+				52ADDDED25A0833A00E0043D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52ADDDDE25A0833900E0043D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ADDDEA25A0833A00E0043D /* ViewController.swift in Sources */,
+				52ADDDE625A0833A00E0043D /* AppDelegate.swift in Sources */,
+				52ADDDFC25A0844F00E0043D /* ChristmasTreeClassifier.mlmodel in Sources */,
+				52ADDDE825A0833A00E0043D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52ADDDEB25A0833A00E0043D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52ADDDEC25A0833A00E0043D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52ADDDF025A0833C00E0043D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52ADDDF125A0833C00E0043D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52ADDDF425A0833C00E0043D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52ADDDF525A0833C00E0043D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52ADDDF725A0833C00E0043D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7L4PCJ79TV;
+				INFOPLIST_FILE = Hohoho/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexantonov.Hohoho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		52ADDDF825A0833C00E0043D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7L4PCJ79TV;
+				INFOPLIST_FILE = Hohoho/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexantonov.Hohoho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52ADDDDD25A0833900E0043D /* Build configuration list for PBXProject "Hohoho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ADDDF425A0833C00E0043D /* Debug */,
+				52ADDDF525A0833C00E0043D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52ADDDF625A0833C00E0043D /* Build configuration list for PBXNativeTarget "Hohoho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ADDDF725A0833C00E0043D /* Debug */,
+				52ADDDF825A0833C00E0043D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52ADDDDA25A0833900E0043D /* Project object */;
+}
