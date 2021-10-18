@@ -13,8 +13,9 @@
 		52ADDDED25A0833A00E0043D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ADDDEB25A0833A00E0043D /* Main.storyboard */; };
 		52ADDDEF25A0833B00E0043D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52ADDDEE25A0833B00E0043D /* Assets.xcassets */; };
 		52ADDDF225A0833C00E0043D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ADDDF025A0833C00E0043D /* LaunchScreen.storyboard */; };
-		52ADDDFC25A0844F00E0043D /* ChristmasTreeClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52ADDDFB25A0844F00E0043D /* ChristmasTreeClassifier.mlmodel */; };
 		52ADDE0D25A0A1A100E0043D /* hohoho.wav in Resources */ = {isa = PBXBuildFile; fileRef = 52ADDE0C25A0A1A100E0043D /* hohoho.wav */; };
+		CCC19134271DBB330083FFDA /* ChristmasTreeClassifier.mlproj in Resources */ = {isa = PBXBuildFile; fileRef = CCC19133271DBB330083FFDA /* ChristmasTreeClassifier.mlproj */; };
+		CCC19136271DBBF50083FFDA /* ChristmasTreeClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CCC19135271DBBF50083FFDA /* ChristmasTreeClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		52ADDDEE25A0833B00E0043D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52ADDDF125A0833C00E0043D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52ADDDF325A0833C00E0043D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52ADDDFB25A0844F00E0043D /* ChristmasTreeClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ChristmasTreeClassifier.mlmodel; path = "../../tree classification/test/ChristmasTreeClassifier.mlmodel"; sourceTree = "<group>"; };
 		52ADDE0C25A0A1A100E0043D /* hohoho.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hohoho.wav; sourceTree = "<group>"; };
+		CCC19133271DBB330083FFDA /* ChristmasTreeClassifier.mlproj */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ChristmasTreeClassifier.mlproj; sourceTree = "<group>"; };
+		CCC19135271DBBF50083FFDA /* ChristmasTreeClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ChristmasTreeClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,8 @@
 				52ADDDE925A0833A00E0043D /* ViewController.swift */,
 				52ADDE0C25A0A1A100E0043D /* hohoho.wav */,
 				52ADDDEB25A0833A00E0043D /* Main.storyboard */,
-				52ADDDFB25A0844F00E0043D /* ChristmasTreeClassifier.mlmodel */,
+				CCC19133271DBB330083FFDA /* ChristmasTreeClassifier.mlproj */,
+				CCC19135271DBBF50083FFDA /* ChristmasTreeClassifier.mlmodel */,
 				52ADDDEE25A0833B00E0043D /* Assets.xcassets */,
 				52ADDDF025A0833C00E0043D /* LaunchScreen.storyboard */,
 				52ADDDF325A0833C00E0043D /* Info.plist */,
@@ -133,6 +136,7 @@
 				52ADDDF225A0833C00E0043D /* LaunchScreen.storyboard in Resources */,
 				52ADDDEF25A0833B00E0043D /* Assets.xcassets in Resources */,
 				52ADDE0D25A0A1A100E0043D /* hohoho.wav in Resources */,
+				CCC19134271DBB330083FFDA /* ChristmasTreeClassifier.mlproj in Resources */,
 				52ADDDED25A0833A00E0043D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,7 +150,7 @@
 			files = (
 				52ADDDEA25A0833A00E0043D /* ViewController.swift in Sources */,
 				52ADDDE625A0833A00E0043D /* AppDelegate.swift in Sources */,
-				52ADDDFC25A0844F00E0043D /* ChristmasTreeClassifier.mlmodel in Sources */,
+				CCC19136271DBBF50083FFDA /* ChristmasTreeClassifier.mlmodel in Sources */,
 				52ADDDE825A0833A00E0043D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

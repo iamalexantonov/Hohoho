@@ -53,11 +53,13 @@ class ViewController: UIViewController {
     }
     
     private func setupCamera() {
-        let cameraPicker = UIImagePickerController()
-        cameraPicker.sourceType = .camera
-        cameraPicker.delegate = self
-        
-        self.present(cameraPicker, animated: true, completion: {})
+        DispatchQueue.main.async {
+            let cameraPicker = UIImagePickerController()
+            cameraPicker.sourceType = .camera
+            cameraPicker.delegate = self
+            
+            self.present(cameraPicker, animated: true, completion: {})
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
