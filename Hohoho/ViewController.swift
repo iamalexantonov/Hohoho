@@ -10,39 +10,46 @@ import Vision
 import AVFoundation
 
 class ViewController: UIViewController {
-    @IBOutlet weak var classificationLabel: UILabel!
-    @IBOutlet weak var previewView: UIImageView!
+    @IBOutlet private weak var classificationLabel: UILabel!
+    @IBOutlet private weak var previewView: UIImageView!
     
-    var isLoading = true
+    private var isLoading = true
     
-    var classificationRequest: VNRequest {
-        let model = try! VNCoreMLModel(for: ChristmasTreeClassifier().model)
-
-        let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
-            self?.processClassifications(for: request, error: error)
-        })
-        request.imageCropAndScaleOption = .centerCrop
-        return request
+    private var classificationRequest: VNRequest {
+        do {
+            let model = try VNCoreMLModel(for: ChristmasTreeClassifier(configuration: .init()).model)
+            
+            let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
+                self?.processClassifications(for: request, error: error)
+            })
+            request.imageCropAndScaleOption = .centerCrop
+            return request
+        } catch {
+            fatalError("Error handling model initialization")
+        }
     }
     
-    var audioPlayer: AVAudioPlayer?
+    private var audioPlayer: AVAudioPlayer?
     
-    func processClassifications(for request: VNRequest, error: Error?) {
-        DispatchQueue.main.async {
+    private func processClassifications(for request: VNRequest, error: Error?) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            
             guard let results = request.results else {
-                self.classificationLabel.text = "Unable to classify image.\n\(error!.localizedDescription)"
+                classificationLabel.text = "Unable to classify image.\n\(error!.localizedDescription)"
                 return
             }
 
-            if let classifications = results as? [VNClassificationObservation] {
-                if classifications.first?.identifier == "Christmas Tree" && classifications.first!.confidence > 0.9 {
-                    self.classificationLabel.text = "This is a Christmas Tree! HO-HO-HO!"
-                    if !(self.audioPlayer?.isPlaying ?? true) {
-                        self.audioPlayer?.play()
-                        
+            if let classifications = results as? [VNClassificationObservation],
+               let audioPlayer,
+               let firstClassification = classifications.first {
+                if firstClassification.identifier == "Christmas Tree" && firstClassification.confidence > 0.9 {
+                    classificationLabel.text = "This is a Christmas Tree! HO-HO-HO!"
+                    if !audioPlayer.isPlaying {
+                        audioPlayer.play()
                     }
                 } else {
-                    self.classificationLabel.text = "That's not a Christmas tree"
+                    classificationLabel.text = "That's not a Christmas tree"
                 }
             }
         }
@@ -53,7 +60,7 @@ class ViewController: UIViewController {
     }
     
     private func setupCamera() {
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [unowned self] in
             let cameraPicker = UIImagePickerController()
             cameraPicker.sourceType = .camera
             cameraPicker.delegate = self
@@ -64,8 +71,6 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
         
         self.classificationLabel.text = "Find a Christmas tree"
         
@@ -111,7 +116,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let photo = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
-        DispatchQueue.global(qos: .userInitiated).async {
+        DispatchQueue.global(qos: .userInitiated).async { [unowned self] in
             let handler = VNImageRequestHandler(cgImage: photo.cgImage!, orientation: .up, options: [:])
             do {
                 try handler.perform([self.classificationRequest])
